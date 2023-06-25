@@ -3,7 +3,7 @@ from bs4 import BeautifulSoup
 import pandas as pd
 
 base_url = "https://www.airlinequality.com/airline-reviews/british-airways"
-pages  = 10
+pages  = 30
 page_size = 100
 
 reviews = []
@@ -30,7 +30,7 @@ for i in range(1, pages + 1):
     df["reviews"] = reviews
     df.head()
 
-    df.to_csv("c:/Users/danielobare/Documents/data/BA_reviews.csv")
+    df.to_csv("c:/Users/danielobare/Documents/data/BA_reviews_1.csv")
     
     
 
